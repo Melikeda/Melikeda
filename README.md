@@ -7,4 +7,4 @@
 
 [LinkedIn](www.linkedin.com/in/melike-kulahci/)
 
-[Mail](m.edakulahci@gmail.com)
+
