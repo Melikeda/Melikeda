@@ -1,7 +1,7 @@
 ## Hi, I'm *Melike Külahcı* ✨👩🏻‍💻
 
 - 🔭 I'm studying at Düzce University. 
-- 🌱 I’m currently learning C++, Python
+- 🌱 I’m currently learning C++
 
 ### Connect with me:
 
