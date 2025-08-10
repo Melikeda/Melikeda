@@ -1,10 +1,26 @@
-## Hi, I'm *Melike Külahcı* ✨👩🏻‍💻
+# Merhaba! 👋 Ben [ Melike Külahcı ]
 
-- 🔭 I'm studying at Düzce University. 
-- 🌱 I’m currently learning Python
+## Hakkımda
 
-### Connect with me:
+Düzce Üniversitesi Bilgisayar Mühendisliği bölümü 3. sınıf öğrencisiyim.  
+Yapay zeka ve veri bilimi alanlarında kendimi geliştirmeye devam ediyorum.  
+C++ ve Python dillerinde projeler yapıyorum.  
 
-[LinkedIn](www.linkedin.com/in/melike-kulahci/)
+---
 
+## 🚀 Teknoloji ve Araçlar
 
+- **Programlama Dilleri:** C++, Python   
+- **Veri Analizi & Görselleştirme:** Pandas, NumPy, Matplotlib
+
+---
+
+## 📫 Bana Ulaşın
+
+- [LinkedIn](https://www.linkedin.com/in/melike-kulahci/)   
+
+---
+
+## 📈 GitHub İstatistiklerim
+
+![Your GitHub stats](https://github-readme-stats.v)
