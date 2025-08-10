@@ -1,4 +1,4 @@
-# Merhaba! 👋 Ben [ Melike Külahcı ]
+# Merhaba! 👋 Ben Melike Külahcı
 
 ## Hakkımda
 
@@ -20,7 +20,3 @@ C++ ve Python dillerinde projeler yapıyorum.
 - [LinkedIn](https://www.linkedin.com/in/melike-kulahci/)   
 
 ---
-
-## 📈 GitHub İstatistiklerim
-
-![Your GitHub stats](https://github-readme-stats.v)
