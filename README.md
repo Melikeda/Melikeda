@@ -1,22 +1,15 @@
-# Merhaba! 👋 Ben Melike Külahcı
+# Hi! 👋 I'm Melike Külahcı
 
-## Hakkımda
+## About Me
 
-Düzce Üniversitesi Bilgisayar Mühendisliği bölümü 3. sınıf öğrencisiyim.  
-Yapay zeka ve veri bilimi alanlarında kendimi geliştirmeye devam ediyorum.  
-C++ ve Python dillerinde projeler yapıyorum.  
-
----
-
-## 🚀 Teknoloji ve Araçlar
-
-- **Programlama Dilleri:** C++, Python   
-- **Veri Analizi & Görselleştirme:** Pandas, NumPy, Matplotlib
+I am a 3rd-year Computer Engineering student at Düzce University.  
+I am focused on developing my skills in Artificial Intelligence and Data Science.  
+I work on various projects using C++ and Python, continuously improving my algorithmic skills.  
 
 ---
 
-## 📫 Bana Ulaşın
+## 📫 Contact Me
 
-- [LinkedIn](https://www.linkedin.com/in/melike-kulahci/)   
+- [LinkedIn](https://www.linkedin.com/in/melike-kulahci/)  
 
 ---
