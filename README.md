@@ -1,4 +1,4 @@
-# Hi! 👋 I'm Melike Külahcı
+# Hi! I'm Melike Külahcı 🌷
 
 ## About Me
 
