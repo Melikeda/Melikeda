@@ -24,8 +24,12 @@ I work on various projects using C++ and Python, continuously improving my algor
 
 
 ### Tools & Platforms
-![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white)
-![Spyder](https://img.shields.io/badge/Spyder-IDE-FF0000?style=flat&logo=spyder&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google-Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)
-![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+<p align="left">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Spyder_logo.svg" alt="Spyder" width="45" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" width="45" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" width="45" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle" width="70"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Slack_icon.svg" alt="Slack" width="45" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" width="45" height="45"/>
+</p>
+
