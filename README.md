@@ -25,11 +25,9 @@ I work on various projects using C++ and Python, continuously improving my algor
 
 ### Tools & Platforms
 <p align="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Spyder_logo.svg" alt="Spyder" width="45" height="45"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" width="45" height="45"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" width="45" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter Notebook" width="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Spyder_logo.svg" alt="Spyder IDE" width="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" width="45"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle" width="70"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Slack_icon.svg" alt="Slack" width="45" height="45"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" width="45" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code" width="45"/>
 </p>
-
