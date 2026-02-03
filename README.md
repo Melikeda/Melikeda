@@ -10,20 +10,27 @@ I work on various projects using C++ and Python, continuously improving my algor
 
 ---
 
-## 📫 Contact Me
+##  Contact Me
 
-- [LinkedIn](https://www.linkedin.com/in/melike-kulahci/)  
+<p align="left">
+  <a href="https://www.linkedin.com/in/in/melike-kulahci/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+         alt="LinkedIn"
+         width="35"
+         hspace="8"/>
+  </a>
+</p>
 
 ---
 
-## 🛠 Technologies
+##  Technologies
 
 ### Programming Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 
 
-### Tools & Platforms
+###  Tools & Platforms
 <p align="left">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter Notebook" width="55" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Spyder_logo.svg" alt="Spyder IDE" width="60" hspace="10"/>
