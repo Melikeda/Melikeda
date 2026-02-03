@@ -37,8 +37,8 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 ### Tools & Platforms
 <p align="left">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="55" hspace="10"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Spyder_logo.svg" width="55" hspace="10"/>
-  <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlecolab.svg" width="55" hspace="10"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Spyder_logo.svg" width="60" hspace="10"/>
+  <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlecolab.svg" width="60" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" width="80" hspace="10"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="55" hspace="10"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="45" hspace="10"/>
 </p>
