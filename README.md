@@ -1,6 +1,5 @@
 # Hi, I'm Melike Külahcı 🌷
 
----
 
 ##  About Me
 
@@ -8,7 +7,6 @@ I am a 3rd-year Computer Engineering student at Düzce University with a strong 
 
 I actively work on projects using **Python** and **C++**, focusing on algorithmic problem solving, data-driven approaches, and continuous technical improvement. My goal is to gain hands-on experience and contribute to impactful AI-focused projects.
 
----
 
 ##  Contact Me
 
@@ -21,7 +19,6 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
   </a>
 </p>
 
----
 
 ##  Technologies
 
