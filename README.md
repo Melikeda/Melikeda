@@ -16,7 +16,7 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
   <a href="https://www.linkedin.com/in/melike-kulahci/" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
          alt="LinkedIn"
-         width="35"
+         width="45"
          hspace="8"/>
   </a>
 </p>
@@ -29,11 +29,11 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
        alt="Python"
-       width="45"
+       width="55"
        hspace="10"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
        alt="C++"
-       width="45"
+       width="55"
        hspace="10"/>
 </p>
 
