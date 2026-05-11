@@ -34,16 +34,8 @@ Currently focused on learning, building, and improving through real-world projec
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
          alt="Medium"
          width="45"
-         hspace="8"/>
+         hspace="10"/>
   </a>
-
-
-<a href="https://medium.com/@m.edakulahci_47769" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo_Monogram.svg"
-       alt="Medium"
-       height="45"
-       hspace="8"/>
-</a>
 </p>
 
 ## Technologies
@@ -60,7 +52,6 @@ Currently focused on learning, building, and improving through real-world projec
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="55" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" width="65" hspace="10"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" width="55" hspace="10"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Scikit_learn_logo_small.svg" width="75" hspace="10"/>
 </p>
 
 ### Tools & Platforms
