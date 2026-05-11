@@ -10,17 +10,17 @@
 
 
 
-# Hi, I'm Melike Külahcı 🌷
+ <h2>Hi, I'm Melike Külahcı 🌷</h2>
 
 
-## About Me
+<h2>About Me</h2>
 
 Computer Engineering student exploring Artificial Intelligence, Data Science, and creative problem solving through code.
 
 Currently focused on learning, building, and improving through real-world projects with Python and C++.
 
 
-## Contact Me
+<h2>Contact Me</h2>
 
 <p align="left">
   <a href="https://www.linkedin.com/in/melike-kulahci/" target="_blank">
@@ -33,20 +33,20 @@ Currently focused on learning, building, and improving through real-world projec
   <a href="https://medium.com/@m.edakulahci_47769" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
          alt="Medium"
-         width="45"
-         hspace="10"/>
+         width="50"
+         hspace="8"/>
   </a>
 </p>
 
-## Technologies
+<h2>Technologies</h2>
 
-### Programming Languages
+<h3>Programming Languages</h3>
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="55" hspace="10"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="55" hspace="10"/>
 </p>
 
-### AI & Data Science
+<h3>AI & Data Science</h3>
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" width="55" hspace="10"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="55" hspace="10"/>
@@ -54,7 +54,7 @@ Currently focused on learning, building, and improving through real-world projec
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" width="55" hspace="10"/>
 </p>
 
-### Tools & Platforms
+<h3>Tools & Platforms</h3>
 <p align="left">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="55" hspace="10"/>
   <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlecolab.svg" width="60" hspace="10"/>
