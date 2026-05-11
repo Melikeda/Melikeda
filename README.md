@@ -1,6 +1,14 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3500&pause=1200&color=F4B6D2&center=true&vCenter=true&width=700&lines=loading+personality.env+..." />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Caveat&size=34&duration=3500&pause=1200&color=F4B6D2&center=true&vCenter=true&width=700&lines=loading+personality.env+..." />
 </p>
+
+
+## Contribution Snake
+
+<p align="center">
+  <img src="https://github.com/Melikeda/Melikeda/blob/output/github-contribution-grid-snake.svg" alt="snake animation"/>
+</p>
+
 
 # Hi, I'm Melike Külahcı 🌷
 
@@ -48,16 +56,18 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 </p>
 
 
-## Contribution Snake
-
-<p align="center">
-  <img src="https://github.com/Melikeda/Melikeda/blob/output/github-contribution-grid-snake.svg" alt="snake animation"/>
-</p>
-
 ## GitHub Stats
 
 <p align="center">
   <img 
     src="https://streak-stats.demolab.com?user=Melikeda&theme=rose-pine&hide_border=true" 
+  />
+</p>
+
+## Most Used Languages
+
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Melikeda&layout=compact&theme=catppuccin_latte&hide_border=true" 
   />
 </p>
