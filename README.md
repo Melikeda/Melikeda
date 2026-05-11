@@ -1,14 +1,14 @@
 # Hi, I'm Melike Külahcı 🌷
 
 
-##  About Me
+## About Me
 
 I am a 3rd-year Computer Engineering student at Düzce University with a strong interest in **Artificial Intelligence** and **Data Science**.
 
 I actively work on projects using **Python** and **C++**, focusing on algorithmic problem solving, data-driven approaches, and continuous technical improvement. My goal is to gain hands-on experience and contribute to impactful AI-focused projects.
 
 
-##  Contact Me
+## Contact Me
 
 <p align="left">
   <a href="https://www.linkedin.com/in/melike-kulahci/" target="_blank">
@@ -20,7 +20,7 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 </p>
 
 
-##  Technologies
+## Technologies
 
 ### Programming Languages
 <p align="left">
@@ -41,4 +41,11 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
   <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlecolab.svg" width="60" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" width="80" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="45" hspace="10"/>
+</p>
+
+
+## Contribution Snake
+
+<p align="center">
+  <img src="https://github.com/Melikeda/Melikeda/blob/output/github-contribution-grid-snake.svg" alt="snake animation"/>
 </p>
