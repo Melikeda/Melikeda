@@ -49,3 +49,11 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 <p align="center">
   <img src="https://github.com/Melikeda/Melikeda/blob/output/github-contribution-grid-snake.svg" alt="snake animation"/>
 </p>
+
+## GitHub Stats
+
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=Melikeda&show_icons=true&theme=omni&hide_border=true&border_radius=20&title_color=ff79c6&icon_color=ffb7c5&text_color=f8f8f2&bg_color=1e1e2e" 
+  />
+</p>
