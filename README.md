@@ -54,6 +54,6 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 
 <p align="center">
   <img 
-    src="https://github-readme-stats.vercel.app/api?username=Melikeda&show_icons=true&theme=radical" 
+    src="https://streak-stats.demolab.com?user=Melikeda&theme=rose-pine&hide_border=true" 
   />
 </p>
