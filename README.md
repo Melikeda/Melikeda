@@ -15,10 +15,9 @@
 
 ## About Me
 
-I am a 3rd-year Computer Engineering student at Düzce University with a strong interest in **Artificial Intelligence** and **Data Science**.
+Computer Engineering student exploring Artificial Intelligence, Data Science, and creative problem solving through code.
 
-I actively work on projects using **Python** and **C++**, focusing on algorithmic problem solving, data-driven approaches, and continuous technical improvement. My goal is to gain hands-on experience and contribute to impactful AI-focused projects.
-
+Currently focused on learning, building, and improving through real-world projects with Python and C++.
 
 ## Contact Me
 
@@ -29,6 +28,13 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
          width="45"
          hspace="8"/>
   </a>
+
+  <a href="https://medium.com/@m.edakulahci_47769" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
+         alt="Medium"
+         width="45"
+         hspace="8"/>
+  </a>
 </p>
 
 
@@ -36,38 +42,26 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 
 ### Programming Languages
 <p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-       alt="Python"
-       width="55"
-       hspace="10"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
-       alt="C++"
-       width="55"
-       hspace="10"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="55" hspace="10"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="55" hspace="10"/>
+</p>
+
+### AI & Data Science
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" width="55" hspace="10"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="55" hspace="10"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" width="65" hspace="10"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="55" hspace="10"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Scikit_learn_logo_small.svg" width="75" hspace="10"/>
 </p>
 
 ### Tools & Platforms
 <p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="55" hspace="10"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="55" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="55" hspace="10"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Spyder_logo.svg" width="60" hspace="10"/>
   <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlecolab.svg" width="60" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" width="80" hspace="10"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="45" hspace="10"/>
-</p>
-
-
-## GitHub Stats
-
-<p align="center">
-  <img 
-    src="https://streak-stats.demolab.com?user=Melikeda&theme=rose-pine&hide_border=true" 
-  />
-</p>
-
-## Most Used Languages
-
-<p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Melikeda&layout=compact&theme=radical&hide_border=true&cache_seconds=1800" 
-  />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Visual_Studio_2022.svg" width="50" hspace="10"/>
 </p>
