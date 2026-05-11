@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=E6A8D7&size=28&center=true&vCenter=true&width=700&lines=Computer+Engineering+Student;Artificial+Intelligence+Enthusiast;Computer+Vision+Learner;Python+Developer"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Sacramento&size=38&duration=3500&pause=1200&color=F4B6D2&center=true&vCenter=true&width=700&lines=loading+personality.env+🌸" />
 </p>
 
 # Hi, I'm Melike Külahcı 🌷
