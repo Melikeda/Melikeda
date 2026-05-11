@@ -10,7 +10,7 @@
 
 
 
- <h2>Hi, I'm Melike Külahcı 🌷</h2>
+ <h2>Hi, I'm Melike Külahcı 🌸</h2>
 
 
 <h2>About Me</h2>
