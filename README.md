@@ -68,6 +68,6 @@ I actively work on projects using **Python** and **C++**, focusing on algorithmi
 
 <p align="center">
   <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Melikeda&layout=compact&theme=omni&hide_border=true" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Melikeda&layout=compact&theme=radical&hide_border=true&cache_seconds=1800" 
   />
 </p>
