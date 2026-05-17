@@ -23,27 +23,29 @@ Currently focused on learning, building, and improving through real-world projec
 <h2>Contact Me</h2>
 
 <p align="left">
+   <h2>Contact Me</h2>
+
+<p align="left">
   <a href="https://www.linkedin.com/in/melike-kulahci/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
          alt="LinkedIn"
          width="45"
-         hspace="8"/>
+         hspace="10"/>
   </a>
 
   <a href="https://medium.com/@m.edakulahci_47769" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
-       alt="Medium"
-       width="45"
-       hspace="8"/>
-</a>
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
+         alt="Medium"
+         width="45"
+         hspace="10"/>
+  </a>
 
   <a href="https://www.kaggle.com/melikeklahc" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg"
-        alt="Kaggle"
-        width="50"
-        hspace="8"/>
+         alt="Kaggle"
+         width="45"
+         hspace="10"/>
   </a>
-  
 </p>
 
 <h2>Technologies</h2>
