@@ -36,6 +36,14 @@ Currently focused on learning, building, and improving through real-world projec
          width="50"
          hspace="8"/>
   </a>
+
+  <a href="https://www.kaggle.com/melikeklahc" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
+         alt="Kaggle"
+         width="70"
+         hspace="8"/>
+  </a>
+  
 </p>
 
 <h2>Technologies</h2>
