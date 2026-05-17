@@ -31,17 +31,17 @@ Currently focused on learning, building, and improving through real-world projec
   </a>
 
   <a href="https://medium.com/@m.edakulahci_47769" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
-         alt="Medium"
-         width="50"
-         hspace="8"/>
-  </a>
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
+       alt="Medium"
+       width="45"
+       hspace="8"/>
+</a>
 
   <a href="https://www.kaggle.com/melikeklahc" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
-         alt="Kaggle"
-         width="70"
-         hspace="8"/>
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg"
+        alt="Kaggle"
+        width="50"
+        hspace="8"/>
   </a>
   
 </p>
