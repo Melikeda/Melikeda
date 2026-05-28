@@ -20,8 +20,6 @@ Computer Engineering student exploring Artificial Intelligence, Data Science, an
 Currently focused on learning, building, and improving through real-world projects with Python and C++.
 
 
-<h2>Contact Me</h2>
-
 <p align="left">
    <h2>Contact Me</h2>
 
