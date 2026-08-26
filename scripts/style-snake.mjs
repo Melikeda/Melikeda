@@ -1,12 +1,35 @@
 #!/usr/bin/env node
-import { readFileSync, writeFileSync } from "node:fs"
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs"
+import { dirname } from "node:path"
 
-const input = process.argv[2]
-const output = process.argv[3] ?? input
+let input = process.argv[2]
+let output = process.argv[3] ?? input
 
 if (!input) {
   console.error("usage: node scripts/style-snake.mjs <input.svg> [output.svg]")
   process.exit(1)
+}
+
+if (!existsSync(input)) {
+  const candidates = []
+  const dirs = [dirname(input) || ".", "dist", "."]
+  for (const dir of dirs) {
+    try {
+      for (const f of readdirSync(dir)) {
+        if (f.endsWith(".svg")) candidates.push(`${dir}/${f}`)
+      }
+    } catch {}
+  }
+  console.log("cwd:", process.cwd())
+  console.log("input not found:", input)
+  console.log("svg candidates:", candidates)
+  if (candidates.length === 0) {
+    console.error("No SVG found to style. Did the snk step run before this one?")
+    process.exit(1)
+  }
+  input = candidates[0]
+  if (!process.argv[3]) output = input
+  console.log("using:", input)
 }
 
 const theme = {
@@ -97,7 +120,12 @@ centers.forEach(([cx, cy], i) => {
 })
 
 const fireworksLayer = `<style>${styles}</style>${groups}`
-svg = svg.replace(/<\/svg>\s*$/, `${fireworksLayer}</svg>`)
+
+if (svg.includes("</svg>")) {
+  svg = svg.replace(/<\/svg>\s*$/, `${fireworksLayer}</svg>`)
+} else {
+  svg = `${svg}${fireworksLayer}`
+}
 
 writeFileSync(output, svg)
 console.log(`styled snake -> ${output}`)
