@@ -15,9 +15,12 @@
 
 <h2>About Me</h2>
 
-Computer Engineering student exploring Artificial Intelligence, Data Science, and creative problem solving through code.
-
-Currently focused on learning, building, and improving through real-world projects with Python and C++.
+## About Me
+🎓 Computer Engineering student passionate about Artificial Intelligence, Data Science, and creative problem solving through code.
+🔍 I enjoy turning ideas into working projects — from data-driven models to algorithm-based solutions.
+💡 Currently focused on learning, building, and improving through real-world projects with Python and C++.
+🎯 Goal: to keep growing as a developer by tackling challenging problems and contributing to meaningful projects.
+📚 When I'm not coding, I like exploring new tech trends and expanding my knowledge in AI/ML. çevir
 
 
 <p align="left">
