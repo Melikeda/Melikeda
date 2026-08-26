@@ -37,11 +37,15 @@ I also write about machine learning and systems on [Medium](https://medium.com/@
 </p>
 
 <h3>AI & Data Science</h3>
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" width="55" hspace="10"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="55" hspace="10"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" width="65" hspace="10"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" width="55" hspace="10"/>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" height="40" alt="NumPy"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40" height="40" alt="Pandas"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" width="40" height="40" alt="OpenCV"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="40" height="40" alt="Matplotlib"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="40" height="40" alt="PyTorch"/>&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics-logomark-color.png" width="40" height="40" alt="YOLO"/>&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/mwaskom/seaborn/master/doc/_static/logo-mark-lightbg.svg" width="40" height="40" alt="Seaborn"/>&nbsp;&nbsp;
+  <img src="https://avatars.githubusercontent.com/u/64534106?s=80&v=4" width="40" height="40" alt="EasyOCR"/>
 </p>
 
 <h3>Tools & Platforms</h3>
