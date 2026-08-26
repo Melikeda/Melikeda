@@ -10,13 +10,13 @@
 
 
 
-<h2>Merhaba, ben Melike</h2>
+<h2>Hi, I'm Melike</h2>
 
-Düzce Üniversitesi Bilgisayar Mühendisliği öğrencisi · Bilgisayarlı Görü ve Makine Öğrenmesi
+Computer Engineering student at Düzce University · Computer Vision & Machine Learning
 
-Modelden ürüne giden uygulamalı yapay zeka sistemleri geliştiriyorum. Ana projem [Yolocilin](https://github.com/Melikeda/yolocilin), ilaç kutularını YOLOv8 ve OCR ile tespit edip tanıyor; sonuçları FastAPI ve Flutter üzerinden sunuyor. Aynı alanda şu an Cerebrum Tech'te yapay zeka stajyeri olarak veri seti hazırlığı, YOLOv8 eğitimi ve model değerlendirmesi üzerine çalışıyorum.
+I build applied AI systems that go from model to product. My main project, [Yolocilin](https://github.com/Melikeda/yolocilin), detects and identifies medicine boxes with YOLOv8 and OCR, then delivers results through FastAPI and Flutter. I currently do the same kind of work as an AI intern at Cerebrum Tech — dataset prep, YOLOv8 training, and evaluation.
 
-Makine öğrenmesi ve sistemler üzerine [Medium](https://medium.com/@m.edakulahci)'da yazıyorum.
+I also write about machine learning and systems on [Medium](https://medium.com/@m.edakulahci).
 
 
 <h2>Contact</h2>
