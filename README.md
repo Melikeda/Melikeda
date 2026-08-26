@@ -15,7 +15,6 @@
 
 <h2>About Me</h2>
 
-## About Me
 🎓 Computer Engineering student passionate about Artificial Intelligence, Data Science, and creative problem solving through code.
 🔍 I enjoy turning ideas into working projects — from data-driven models to algorithm-based solutions.
 💡 Currently focused on learning, building, and improving through real-world projects with Python and C++.
