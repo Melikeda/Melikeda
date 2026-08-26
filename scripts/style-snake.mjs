@@ -33,6 +33,31 @@ const fireworkColors = [
   "#ffe566",
 ]
 
+const triangleColors = [
+  "#7a4a00",
+  "#0a2548",
+  "#8a1858",
+  "#0a4a94",
+  "#5a1a7a",
+  "#0d3d6e",
+  "#6b2e00",
+]
+
+function fireworkTriangle(cx, cy, size, color, rotation) {
+  const half = size * 0.52
+  const rad = (rotation * Math.PI) / 180
+  const points = [
+    [0, -size],
+    [half, size * 0.55],
+    [-half, size * 0.55],
+  ].map(([x, y]) => {
+    const xr = x * Math.cos(rad) - y * Math.sin(rad)
+    const yr = x * Math.sin(rad) + y * Math.cos(rad)
+    return `${(cx + xr).toFixed(2)},${(cy + yr).toFixed(2)}`
+  })
+  return `<polygon points="${points.join(" ")}" fill="${color}"/>`
+}
+
 function setCssVar(svg, name, value) {
   return svg.replace(new RegExp(`--${name}:[^;}]+`), `--${name}:${value}`)
 }
@@ -159,6 +184,16 @@ export function styleSnake(svg, env = process.env) {
       const color = fireworkColors[p % fireworkColors.length]
       const r = (2.4 + (p % 4) * 0.7).toFixed(1)
       particles += `<circle cx="${px}" cy="${py}" r="${r}" fill="${color}"/>`
+    }
+    const trianglesPerBurst = 14
+    for (let p = 0; p < trianglesPerBurst; p++) {
+      const angle = (p / trianglesPerBurst) * Math.PI * 2 + 0.11
+      const radius = spreadRadius * (0.55 + (p % 3) * 0.12)
+      const px = Math.cos(angle) * radius
+      const py = Math.sin(angle) * radius
+      const color = triangleColors[p % triangleColors.length]
+      const size = 1.15 + (p % 3) * 0.15
+      particles += fireworkTriangle(px, py, size, color, (p * 37) % 360)
     }
     for (let p = 0; p < sparklesPerBurst; p++) {
       const angle = (p / sparklesPerBurst) * Math.PI * 2 + 0.19
