@@ -45,14 +45,20 @@ I also write about machine learning and systems on [Medium](https://medium.com/@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="40" height="40" alt="PyTorch"/>&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics-logomark-color.png" width="40" height="40" alt="YOLO"/>&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/mwaskom/seaborn/master/doc/_static/logo-mark-lightbg.svg" width="40" height="40" alt="Seaborn"/>&nbsp;&nbsp;
-  <img src="https://avatars.githubusercontent.com/u/64534106?s=80&v=4" width="40" height="40" alt="EasyOCR"/>
+  <img src="https://avatars.githubusercontent.com/u/64534106?s=80&v=4" width="40" height="40" alt="EasyOCR"/>&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/roboflow/6706CE" width="40" height="40" alt="Roboflow"/>
 </p>
 
 <h3>Tools & Platforms</h3>
-<p align="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="55" hspace="10"/>
-  <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlecolab.svg" width="60" hspace="10"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" width="80" hspace="10"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="45" hspace="10"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" width="50" hspace="10"/>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="40" height="40" alt="Jupyter"/>&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="40" height="40" alt="Google Colab"/>&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="40" height="40" alt="Kaggle"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width="40" height="40" alt="Visual Studio"/>&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/cursor/000000" width="40" height="40" alt="Cursor"/>&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/claude/D97757" width="40" height="40" alt="Claude"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" height="40" alt="Docker"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="40" height="40" alt="FastAPI"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="40" height="40" alt="Flutter"/>
 </p>
