@@ -29,28 +29,17 @@
 <p align="left">
    <h2>Contact Me</h2>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/melike-kulahci/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-         alt="LinkedIn"
-         width="45"
-         hspace="10"/>
-  </a>
+<a href="https://www.linkedin.com/in/kullanici-adin" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="45" hspace="10"/>
+</a>
 
-  <a href="https://medium.com/@m.edakulahci_47769" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg"
-         alt="Medium"
-         width="45"
-         hspace="10"/>
-  </a>
+<a href="https://medium.com/@m.edakulahci_47769" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg" alt="Medium" width="45" hspace="10"/>
+</a>
 
-  <a href="https://www.kaggle.com/melikeklahc" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg"
-         alt="Kaggle"
-         width="45"
-         hspace="10"/>
-  </a>
-</p>
+<a href="https://www.kaggle.com/kullanici-adin" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle" width="45" hspace="10"/>
+</a>
 
 <h2>Technologies</h2>
 
