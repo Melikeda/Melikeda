@@ -21,10 +21,10 @@ I also write about machine learning and systems on [Medium](https://medium.com/@
 
 <h2>Contact</h2>
 <p>
-  <a href="https://www.linkedin.com/in/melike-kulahci" title="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="28" height="28" alt="LinkedIn"/></a>&nbsp;&nbsp;
-  <a href="https://github.com/Melikeda" title="GitHub"><img src="https://cdn.simpleicons.org/github/181717" width="28" height="28" alt="GitHub"/></a>&nbsp;&nbsp;
-  <a href="https://medium.com/@m.edakulahci" title="Medium"><img src="https://cdn.simpleicons.org/medium/000000" width="28" height="28" alt="Medium"/></a>&nbsp;&nbsp;
-  <a href="https://www.kaggle.com/melikeklahc" title="Kaggle"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="28" height="28" alt="Kaggle"/></a>
+  <a href="https://www.linkedin.com/in/melike-kulahci" title="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="40" height="40" alt="LinkedIn"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/Melikeda" title="GitHub"><img src="https://cdn.simpleicons.org/github/181717" width="40" height="40" alt="GitHub"/></a>&nbsp;&nbsp;
+  <a href="https://medium.com/@m.edakulahci" title="Medium"><img src="https://cdn.simpleicons.org/medium/000000" width="40" height="40" alt="Medium"/></a>&nbsp;&nbsp;
+  <a href="https://www.kaggle.com/melikeklahc" title="Kaggle"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="40" height="40" alt="Kaggle"/></a>
 </p>
 
 <h2>Technologies</h2>
