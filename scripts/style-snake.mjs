@@ -4,25 +4,34 @@ import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
 /**
- * GitHub.com contribution calendar (light theme).
- * Empty cells use #ebedf0 so the grid stays visible on a white README —
- * a white fill + hairline border disappears after the snake eats a square.
+ * GitHub.com contribution calendar layout (visible empty cells + sized rects)
+ * with a navy snake and blue contribution levels.
  *
  * CSS variable replacements must stop at ";" or "}". Platane minifies :root
  * without a trailing semicolon, so `--c4:[^;]+;` used to swallow `.c{...}`
- * and the cells rendered at 0×0 (snake still visible because it has width/height).
+ * and the cells rendered at 0×0.
  */
 export const theme = {
-  snake: "#0e4429",
+  snake: "#0a2548",
   border: "#d0d7de",
   empty: "#ebedf0",
-  dots: ["#ebedf0", "#aceebb", "#4ac26b", "#2da44e", "#116329"],
+  dots: ["#ebedf0", "#b7d7f5", "#6aa8e8", "#2b7fd6", "#0a4a94"],
   strokeWidth: "1px",
   cellRadius: "2",
   cellSize: "12",
 }
 
-const fireworkColors = ["#ffd700", "#ff5db1", "#5db4ff", "#ffffff", "#8dff9e"]
+const FINALE_HOLD_MS = 3000
+
+const fireworkColors = [
+  "#ffffff",
+  "#fff4b0",
+  "#ffd700",
+  "#7ec8ff",
+  "#ff8ad4",
+  "#c8f4ff",
+  "#ffe566",
+]
 
 function setCssVar(svg, name, value) {
   return svg.replace(new RegExp(`--${name}:[^;}]+`), `--${name}:${value}`)
@@ -37,6 +46,21 @@ function sizeContributionCells(svg) {
       .replace(/\s+ry="[^"]*"/g, "")
       .trimEnd()
     return `<rect class="c${cls}"${cleaned} width="${theme.cellSize}" height="${theme.cellSize}" rx="${theme.cellRadius}" ry="${theme.cellRadius}"/>`
+  })
+}
+
+function stretchPlayhead(svg, nativeDuration, duration) {
+  const scale = nativeDuration / duration
+  const hold = +(100 * scale).toFixed(2)
+  return svg.replace(/<style>([\s\S]*?)<\/style>/, (_, css) => {
+    const scaled = css.replace(/([\d.]+)%/g, (m, raw) => {
+      const v = Number(raw)
+      if (v === 0) return "0%"
+      const next = +Math.min(v * scale, 99.99).toFixed(2)
+      if (v === 100) return `${hold}%,100%`
+      return `${next}%`
+    })
+    return `<style>${scaled}</style>`
   })
 }
 
@@ -61,10 +85,15 @@ export function styleSnake(svg, env = process.env) {
   const durationMatch = svg.match(/animation:\s*none\s+(\d+)ms/)
   const nativeDuration = durationMatch ? Number(durationMatch[1]) : 41500
   const override = Number(env.STYLE_SNAKE_DURATION)
-  const duration = Number.isFinite(override) && override > 0 ? override : nativeDuration
+  const duration =
+    Number.isFinite(override) && override > 0 ? override : nativeDuration + FINALE_HOLD_MS
+
+  const percentMatches = [...svg.matchAll(/([\d.]+)%\{fill:var\(--c[0-4]\)\}/g)]
+  const lastEaten = percentMatches.reduce((max, m) => Math.max(max, Number(m[1])), 0)
 
   if (duration !== nativeDuration) {
-    svg = svg.replace(/animation:\s*none\s+\d+ms/, `animation:none ${duration}ms`)
+    svg = stretchPlayhead(svg, nativeDuration, duration)
+    svg = svg.replaceAll(`${nativeDuration}ms`, `${duration}ms`)
   }
 
   const cellRule = `.c{shape-rendering:geometricPrecision;fill:${theme.empty};stroke:${theme.border};stroke-width:${theme.strokeWidth};animation:none ${duration}ms linear infinite;width:${theme.cellSize}px;height:${theme.cellSize}px;rx:${theme.cellRadius}px;ry:${theme.cellRadius}px}`
@@ -74,9 +103,6 @@ export function styleSnake(svg, env = process.env) {
   )
   svg = svg.replace("</style>", `${cellRule}</style>`)
 
-  const percentMatches = [...svg.matchAll(/([\d.]+)%\{fill:var\(--c[0-4]\)\}/g)]
-  const lastEaten = percentMatches.reduce((max, m) => Math.max(max, Number(m[1])), 0)
-
   const viewBox = (svg.match(/viewBox="([^"]+)"/)?.[1] ?? "-16 -32 880 192")
     .split(/\s+/)
     .map(Number)
@@ -85,44 +111,62 @@ export function styleSnake(svg, env = process.env) {
   const gridBottom = vbY + vbH - 40
 
   const centers = [
-    [vbX + vbW * 0.2, vbY + vbH * 0.35],
-    [vbX + vbW * 0.45, vbY + vbH * 0.22],
-    [vbX + vbW * 0.68, vbY + vbH * 0.4],
-    [vbX + vbW * 0.85, vbY + vbH * 0.28],
+    [vbX + vbW * 0.16, vbY + vbH * 0.32],
+    [vbX + vbW * 0.38, vbY + vbH * 0.2],
+    [vbX + vbW * 0.55, vbY + vbH * 0.42],
+    [vbX + vbW * 0.72, vbY + vbH * 0.24],
+    [vbX + vbW * 0.88, vbY + vbH * 0.36],
+    [vbX + vbW * 0.28, vbY + vbH * 0.52],
   ].map(([x, y]) => [
     Math.min(Math.max(x, vbX + 30), gridRight),
     Math.min(Math.max(y, vbY + 20), gridBottom),
   ])
 
-  const windowStart = Math.min(lastEaten + 0.4, 99)
-  const windowSpan = Math.max(100 - windowStart, 3)
-  const particlesPerBurst = 12
-  const spreadRadius = 11
+  const playthrough = (nativeDuration / duration) * 100
+  const lastEatenOnTimeline = lastEaten * (nativeDuration / duration)
+  const windowStart = Math.min(lastEatenOnTimeline + 0.3, playthrough)
+  const windowSpan = Math.max(100 - windowStart, 4)
+  const particlesPerBurst = 22
+  const sparklesPerBurst = 18
+  const spreadRadius = 26
+  const sparkleRadius = 40
 
   let styles = ""
   let groups = ""
 
   centers.forEach(([cx, cy], i) => {
-    const start = +(windowStart + (windowSpan * i) / (centers.length + 1)).toFixed(2)
-    const flash = +(start + 0.3).toFixed(2)
-    const end = +Math.min(start + windowSpan * 0.75, 99.9).toFixed(2)
+    const start = +(windowStart + (windowSpan * i) / (centers.length + 1.2)).toFixed(2)
+    const flash = +(start + 0.25).toFixed(2)
+    const hold = +(start + windowSpan * 0.55).toFixed(2)
+    const end = +Math.min(start + windowSpan * 0.95, 99.6).toFixed(2)
 
     styles += `
 .fw${i}{opacity:0;animation:fw${i} ${duration}ms linear infinite}
 @keyframes fw${i}{
-  0%,${start}%{opacity:0;transform:translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px) scale(0.12)}
-  ${flash}%{opacity:1;transform:translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px) scale(0.2)}
-  ${end}%{opacity:0;transform:translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px) scale(2.1)}
+  0%,${start}%{opacity:0;transform:translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px) scale(0.08)}
+  ${flash}%{opacity:1;transform:translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px) scale(0.35)}
+  ${hold}%{opacity:1;transform:translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px) scale(2.6)}
+  ${end}%{opacity:0;transform:translate(${cx.toFixed(1)}px,${cy.toFixed(1)}px) scale(5.4)}
   100%{opacity:0}
 }`
 
-    let particles = ""
+    let particles = `<circle cx="0" cy="0" r="5.2" fill="#fffef0"/><circle cx="0" cy="0" r="9" fill="#ffd700" fill-opacity="0.35"/>`
     for (let p = 0; p < particlesPerBurst; p++) {
       const angle = (p / particlesPerBurst) * Math.PI * 2
-      const px = (Math.cos(angle) * spreadRadius).toFixed(2)
-      const py = (Math.sin(angle) * spreadRadius).toFixed(2)
+      const jitter = 0.72 + (p % 5) * 0.08
+      const px = (Math.cos(angle) * spreadRadius * jitter).toFixed(2)
+      const py = (Math.sin(angle) * spreadRadius * jitter).toFixed(2)
       const color = fireworkColors[p % fireworkColors.length]
-      particles += `<circle cx="${px}" cy="${py}" r="2.2" fill="${color}"/>`
+      const r = (2.4 + (p % 4) * 0.7).toFixed(1)
+      particles += `<circle cx="${px}" cy="${py}" r="${r}" fill="${color}"/>`
+    }
+    for (let p = 0; p < sparklesPerBurst; p++) {
+      const angle = (p / sparklesPerBurst) * Math.PI * 2 + 0.19
+      const px = (Math.cos(angle) * sparkleRadius).toFixed(2)
+      const py = (Math.sin(angle) * sparkleRadius).toFixed(2)
+      const color = fireworkColors[(p + 2) % fireworkColors.length]
+      particles += `<circle cx="${px}" cy="${py}" r="1.15" fill="${color}"/>`
+      particles += `<rect x="${(+px - 0.45).toFixed(2)}" y="${(+py - 2.1).toFixed(2)}" width="0.9" height="4.2" fill="#ffffff" rx="0.4"/>`
     }
     groups += `<g class="fw${i}">${particles}</g>`
   })
