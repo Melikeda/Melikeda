@@ -10,20 +10,13 @@
 
 
 
- <h2>Hi, I'm Melike🌸</h2>
+<h2>Hi, I'm Melike</h2>
 
+Computer Engineering student at Düzce University · Computer Vision & Machine Learning
 
-<h2>About Me</h2>
+I build applied AI systems that go from model to product. My main project, [Yolocilin](https://github.com/Melikeda/yolocilin), detects and identifies medicine boxes with YOLOv8 and OCR, then delivers results through FastAPI and Flutter. I currently do the same kind of work as an AI intern at Cerebrum Tech — dataset prep, YOLOv8 training, and evaluation.
 
-🎓 Computer Engineering student passionate about Artificial Intelligence, Data Science, and creative problem solving through code.
-
-🔍 I enjoy turning ideas into working projects — from data-driven models to algorithm-based solutions.
-
-💡 Currently focused on learning, building, and improving through real-world projects with Python and C++.
-
-🎯 Goal: to keep growing as a developer by tackling challenging problems and contributing to meaningful projects.
-
-📚 When I'm not coding, I like exploring new tech trends and expanding my knowledge in AI/ML. çevir
+I also write about machine learning and systems on [Medium](https://medium.com/@m.edakulahci).
 
 
 <p align="left">
