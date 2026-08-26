@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/Melikeda/Melikeda/blob/output/github-contribution-grid-snake.svg" alt="snake animation"/>
+  <img src="https://raw.githubusercontent.com/Melikeda/Melikeda/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake"/>
 </p>
 
 

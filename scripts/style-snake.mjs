@@ -4,19 +4,28 @@ import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
 /**
- * Empty-cell colors must contrast with GitHub's white (and dark) README
- * background. The previous --ce/#eaf3ff fill was ~1.08:1 on white, so the
- * contribution grid vanished as soon as the snake ate a cell.
+ * Match GitHub.com's contribution calendar (light theme):
+ * white empty cells, 1px muted border, 2px corner radius, green levels.
+ * Empty cells keep a visible outline so the grid does not vanish on the
+ * white README after the snake eats a square.
  */
 export const theme = {
-  snake: "#0a2f6b",
-  border: "#5b8ec4",
-  empty: "#b7d3ee",
-  dots: ["#8ec0ea", "#5aa3e0", "#2f86d4", "#1568b8", "#0a4a94"],
-  strokeWidth: "1.5px",
+  snake: "#0e4429",
+  border: "#d0d7de",
+  empty: "#ffffff",
+  dots: ["#ffffff", "#aceebb", "#4ac26b", "#2da44e", "#116329"],
+  strokeWidth: "1px",
+  cellRadius: "2",
 }
 
 const fireworkColors = ["#ffd700", "#ff5db1", "#5db4ff", "#ffffff", "#8dff9e"]
+
+function roundContributionCells(svg) {
+  return svg.replace(
+    /(<rect class="c[^"]*"[^>]*?)\s+rx="[\d.]+"\s+ry="[\d.]+"/g,
+    `$1 rx="${theme.cellRadius}" ry="${theme.cellRadius}"`,
+  )
+}
 
 export function styleSnake(svg, env = process.env) {
   const replacements = [
@@ -34,12 +43,13 @@ export function styleSnake(svg, env = process.env) {
     svg = svg.replace(re, value)
   }
 
-  // Explicit .c rule so empty cells keep a visible fill even if :root
-  // inheritance is stripped by GitHub's image proxy.
-  const cellRule = `.c{fill:var(--ce);stroke:var(--cb);stroke-width:${theme.strokeWidth}}`
-  if (!svg.includes(".c{fill:var(--ce)")) {
-    svg = svg.replace("</style>", `${cellRule}</style>`)
-  }
+  svg = roundContributionCells(svg)
+
+  // Explicit colors (not only CSS variables) so empty cells stay visible
+  // if GitHub's image proxy strips :root custom properties.
+  const cellRule = `.c{fill:${theme.empty};stroke:${theme.border};stroke-width:${theme.strokeWidth};rx:${theme.cellRadius}px;ry:${theme.cellRadius}px}`
+  svg = svg.replace(/\.c\{fill:(?:var\(--ce\)|#[0-9a-fA-F]{3,8});stroke:[^}]+\}/g, "")
+  svg = svg.replace("</style>", `${cellRule}</style>`)
 
   const durationMatch = svg.match(/animation:\s*none\s+(\d+)ms/)
   const nativeDuration = durationMatch ? Number(durationMatch[1]) : 41500
