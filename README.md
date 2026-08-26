@@ -19,20 +19,13 @@ I build applied AI systems that go from model to product. My main project, [Yolo
 I also write about machine learning and systems on [Medium](https://medium.com/@m.edakulahci).
 
 
-<p align="left">
-   <h2>Contact Me</h2>
-
-<a href="https://www.linkedin.com/in/kullanici-adin" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="45" hspace="10"/>
-</a>
-
-<a href="https://medium.com/@m.edakulahci_47769" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg" alt="Medium" width="45" hspace="10"/>
-</a>
-
-<a href="https://www.kaggle.com/kullanici-adin" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle" width="45" hspace="10"/>
-</a>
+<h2>Contact</h2>
+<p>
+  <a href="https://www.linkedin.com/in/melike-kulahci" title="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="28" height="28" alt="LinkedIn"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/Melikeda" title="GitHub"><img src="https://cdn.simpleicons.org/github/181717" width="28" height="28" alt="GitHub"/></a>&nbsp;&nbsp;
+  <a href="https://medium.com/@m.edakulahci" title="Medium"><img src="https://cdn.simpleicons.org/medium/000000" width="28" height="28" alt="Medium"/></a>&nbsp;&nbsp;
+  <a href="https://www.kaggle.com/melikeklahc" title="Kaggle"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="28" height="28" alt="Kaggle"/></a>
+</p>
 
 <h2>Technologies</h2>
 
