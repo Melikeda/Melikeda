@@ -23,7 +23,7 @@ jobs:
           github_user_name: Melikeda
           github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#0e4429&color_dots=#ffffff,#aceebb,#4ac26b,#2da44e,#116329&color_dot_border=#d0d7de
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#0e4429&color_dots=#ebedf0,#aceebb,#4ac26b,#2da44e,#116329&color_dot_border=#d0d7de
 
       - name: Style snake (GitHub contribution grid + fireworks finale)
         run: |

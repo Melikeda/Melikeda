@@ -4,52 +4,59 @@ import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
 /**
- * Match GitHub.com's contribution calendar (light theme):
- * white empty cells, 1px muted border, 2px corner radius, green levels.
- * Empty cells keep a visible outline so the grid does not vanish on the
- * white README after the snake eats a square.
+ * GitHub.com contribution calendar (light theme).
+ * Empty cells use #ebedf0 so the grid stays visible on a white README —
+ * a white fill + hairline border disappears after the snake eats a square.
+ *
+ * CSS variable replacements must stop at ";" or "}". Platane minifies :root
+ * without a trailing semicolon, so `--c4:[^;]+;` used to swallow `.c{...}`
+ * and the cells rendered at 0×0 (snake still visible because it has width/height).
  */
 export const theme = {
   snake: "#0e4429",
   border: "#d0d7de",
-  empty: "#ffffff",
-  dots: ["#ffffff", "#aceebb", "#4ac26b", "#2da44e", "#116329"],
+  empty: "#ebedf0",
+  dots: ["#ebedf0", "#aceebb", "#4ac26b", "#2da44e", "#116329"],
   strokeWidth: "1px",
   cellRadius: "2",
+  cellSize: "12",
 }
 
 const fireworkColors = ["#ffd700", "#ff5db1", "#5db4ff", "#ffffff", "#8dff9e"]
 
-function roundContributionCells(svg) {
-  return svg.replace(
-    /(<rect class="c[^"]*"[^>]*?)\s+rx="[\d.]+"\s+ry="[\d.]+"/g,
-    `$1 rx="${theme.cellRadius}" ry="${theme.cellRadius}"`,
-  )
+function setCssVar(svg, name, value) {
+  return svg.replace(new RegExp(`--${name}:[^;}]+`), `--${name}:${value}`)
+}
+
+function sizeContributionCells(svg) {
+  return svg.replace(/<rect class="c([^"]*)"([^>]*?)\s*\/?>/g, (_, cls, rest) => {
+    const cleaned = rest
+      .replace(/\s+width="[^"]*"/g, "")
+      .replace(/\s+height="[^"]*"/g, "")
+      .replace(/\s+rx="[^"]*"/g, "")
+      .replace(/\s+ry="[^"]*"/g, "")
+      .trimEnd()
+    return `<rect class="c${cls}"${cleaned} width="${theme.cellSize}" height="${theme.cellSize}" rx="${theme.cellRadius}" ry="${theme.cellRadius}"/>`
+  })
 }
 
 export function styleSnake(svg, env = process.env) {
-  const replacements = [
-    [/--cs:[^;]+;/, `--cs:${theme.snake};`],
-    [/--cb:[^;]+;/, `--cb:${theme.border};`],
-    [/--ce:[^;]+;/, `--ce:${theme.empty};`],
-    [/--c0:[^;]+;/, `--c0:${theme.dots[0]};`],
-    [/--c1:[^;]+;/, `--c1:${theme.dots[1]};`],
-    [/--c2:[^;]+;/, `--c2:${theme.dots[2]};`],
-    [/--c3:[^;]+;/, `--c3:${theme.dots[3]};`],
-    [/--c4:[^;]+;/, `--c4:${theme.dots[4]};`],
-    [/stroke-width:\s*[\d.]+px/, `stroke-width:${theme.strokeWidth}`],
-  ]
-  for (const [re, value] of replacements) {
-    svg = svg.replace(re, value)
-  }
+  svg = setCssVar(svg, "cs", theme.snake)
+  svg = setCssVar(svg, "cb", theme.border)
+  svg = setCssVar(svg, "ce", theme.empty)
+  svg = setCssVar(svg, "c0", theme.dots[0])
+  svg = setCssVar(svg, "c1", theme.dots[1])
+  svg = setCssVar(svg, "c2", theme.dots[2])
+  svg = setCssVar(svg, "c3", theme.dots[3])
+  svg = setCssVar(svg, "c4", theme.dots[4])
 
-  svg = roundContributionCells(svg)
+  // Repair a previously swallowed `.c` rule that got concatenated onto :root.
+  svg = svg.replace(
+    /(:root\{[^}]*--c4:#[0-9a-fA-F]+)(?:;fill:var\(--ce\);stroke-width:[^}]+)?\}/,
+    "$1}",
+  )
 
-  // Explicit colors (not only CSS variables) so empty cells stay visible
-  // if GitHub's image proxy strips :root custom properties.
-  const cellRule = `.c{fill:${theme.empty};stroke:${theme.border};stroke-width:${theme.strokeWidth};rx:${theme.cellRadius}px;ry:${theme.cellRadius}px}`
-  svg = svg.replace(/\.c\{fill:(?:var\(--ce\)|#[0-9a-fA-F]{3,8});stroke:[^}]+\}/g, "")
-  svg = svg.replace("</style>", `${cellRule}</style>`)
+  svg = sizeContributionCells(svg)
 
   const durationMatch = svg.match(/animation:\s*none\s+(\d+)ms/)
   const nativeDuration = durationMatch ? Number(durationMatch[1]) : 41500
@@ -59,6 +66,13 @@ export function styleSnake(svg, env = process.env) {
   if (duration !== nativeDuration) {
     svg = svg.replace(/animation:\s*none\s+\d+ms/, `animation:none ${duration}ms`)
   }
+
+  const cellRule = `.c{shape-rendering:geometricPrecision;fill:${theme.empty};stroke:${theme.border};stroke-width:${theme.strokeWidth};animation:none ${duration}ms linear infinite;width:${theme.cellSize}px;height:${theme.cellSize}px;rx:${theme.cellRadius}px;ry:${theme.cellRadius}px}`
+  svg = svg.replace(
+    /\.c\{shape-rendering:geometricPrecision;fill:[^}]+\}/g,
+    "",
+  )
+  svg = svg.replace("</style>", `${cellRule}</style>`)
 
   const percentMatches = [...svg.matchAll(/([\d.]+)%\{fill:var\(--c[0-4]\)\}/g)]
   const lastEaten = percentMatches.reduce((max, m) => Math.max(max, Number(m[1])), 0)
