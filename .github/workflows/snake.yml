@@ -19,7 +19,9 @@ jobs:
           outputs: dist/github-contribution-grid-snake.svg
 
       - name: Style snake (blue theme + fireworks finale)
-        run: node scripts/style-snake.mjs dist/github-contribution-grid-snake.svg
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" dist
+          node scripts/style-snake.mjs dist/github-contribution-grid-snake.svg
 
       - uses: crazy-max/ghaction-github-pages@v3
         with:
