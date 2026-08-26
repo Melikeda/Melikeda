@@ -14,9 +14,9 @@
 
 Computer Engineering student at Düzce University · Computer Vision & Machine Learning
 
-I build applied AI systems that go from model to product. My main project, [Yolocilin](https://github.com/Melikeda/yolocilin), detects and identifies medicine boxes with YOLOv8 and OCR, then delivers results through FastAPI and Flutter. I currently do the same kind of work as an AI intern at Cerebrum Tech — dataset prep, YOLOv8 training, and evaluation.
+I build applied AI systems that go from model to product. My main project, [Yolocilin](https://github.com/Melikeda/yolocilin), detects and identifies medicine boxes with YOLOv8 and OCR, then delivers results through FastAPI and Flutter.
 
-I also write about machine learning and systems on [Medium](https://medium.com/@m.edakulahci).
+I write on [Medium](https://medium.com/@m.edakulahci) about what I learn and build — AI, software, and the topics I explore along the way.
 
 
 <h2>Contact</h2>
