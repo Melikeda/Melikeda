@@ -16,7 +16,7 @@ Computer Engineering student at Düzce University · Computer Vision & Machine L
 
 I build applied AI systems that go from model to product. My main project, [Yolocilin](https://github.com/Melikeda/yolocilin), detects and identifies medicine boxes with YOLOv8 and OCR, then delivers results through FastAPI and Flutter.
 
-The illustrated folio is **[portfoliomell](https://github.com/Melikeda/portfoliomell)** — one bilingual page: profile, timeline, Yolocilin, contact.
+The illustrated folio is **[mywebsite](https://github.com/Melikeda/mywebsite)** — one bilingual page: profile, timeline, Yolocilin, contact.
 
 I write on [Medium](https://medium.com/@m.edakulahci) about what I learn and build — AI, software, and the topics I explore along the way.
 
